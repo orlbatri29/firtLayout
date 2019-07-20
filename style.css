@@ -15,6 +15,7 @@ main{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    grid-area: 3/1/3/6;
 }
 
 .section3 div{
@@ -41,6 +42,7 @@ main{
     padding-top: 10px;
     padding-bottom: 10px;
     flex-wrap: wrap;
+    grid-area: 4/1/4/6;
 }
 
 .section4 img{
@@ -54,6 +56,8 @@ header{
     background-color: black;
     color: white;
     padding-left: 10px;
+    grid-area: 1/1/1/6;
+
 
 }
 
@@ -67,18 +71,26 @@ footer{
     justify-content: center;
     background-color: black;
     color: white;
+    grid-area: 6/1/6/6;
 }
 
 .section5{
     display: flex;
     justify-content: center;
     border: 1px solid tomato;
+    grid-area: 5/1/5/6;
 }
 
 .section2{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    grid-area: 2/1/2/6; /*row-start / column-start / row-end / column-end*/
+    /* grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 2; */
+
 }
 
 .section2 div:nth-child(1){
@@ -92,3 +104,9 @@ footer{
     width: 50px;
     height: 100px;;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 50px 300px auto;
+  }
